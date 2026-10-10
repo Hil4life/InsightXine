@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Business Data | InsightXine</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#28a879">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="data-page">
+
+    <!-- HEADER -->
+    <header class="setup-header">
+
+        <a href="dashboard.html" class="logo">
+            Insight<span>Xine</span>
+        </a>
+
+        <span class="setup-progress">
+            Business Data
+        </span>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="data-container">
+
+        <div class="setup-intro">
+
+            <p class="eyebrow">
+                BUSINESS ACTIVITY
+            </p>
+
+            <h1>
+                Tell us what your business offers.
+            </h1>
+
+            <p>
+                Add your main services or products so InsightXine
+                can start identifying what's performing best.
+            </p>
+
+        </div>
+
+
+        <!-- SERVICE FORM -->
+        <form id="serviceForm" class="business-form">
+
+            <div class="form-group">
+
+                <label for="serviceName">
+                    Service or product name
+                </label>
+
+                <input
+                    type="text"
+                    id="serviceName"
+                    placeholder="e.g. Facial Treatment"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="serviceCategory">
+                    Category
+                </label>
+
+                <select id="serviceCategory" required>
+
+                    <option value="">
+                        Select a category
+                    </option>
+
+                    <option value="service">
+                        Service
+                    </option>
+
+                    <option value="product">
+                        Product
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="bookings">
+                    How many times was this purchased or booked this month?
+                </label>
+
+                <input
+                    type="number"
+                    id="bookings"
+                    placeholder="e.g. 25"
+                    min="0"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="price">
+                    Average price
+                </label>
+
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="e.g. 15000"
+                    min="0"
+                    required
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="primary-button setup-button"
+            >
+                Add Service
+            </button>
+
+        </form>
+
+
+        <!-- ADDED SERVICES -->
+        <section class="added-data">
+
+            <div class="section-title">
+
+                <div>
+
+                    <p class="dashboard-label">
+                        YOUR BUSINESS DATA
+                    </p>
+
+                    <h2>
+                        Added services
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div id="servicesList" class="services-list">
+
+                <p class="empty-state">
+                    No services added yet.
+                </p>
+
+            </div>
+
+
+            <button
+                id="finishDataButton"
+                class="primary-button finish-data-button"
+                type="button"
+            >
+                Continue to Dashboard
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Set Up Your Business | InsightXine</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+
+     <meta name="theme-color" content="#28a879">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="setup-page">
+
+    <!-- TOP BAR -->
+    <header class="setup-header">
+
+        <a href="index.html" class="logo">
+            Insight<span>Xine</span>
+        </a>
+
+        <span class="setup-progress">
+            Step 1 of 3
+        </span>
+
+    </header>
+
+
+    <!-- SETUP CONTENT -->
+    <main class="setup-container">
+
+        <div class="setup-intro">
+
+            <p class="eyebrow">
+                LET'S GET STARTED
+            </p>
+
+            <h1>
+                Tell us about your business.
+            </h1>
+
+            <p>
+                We'll use this information to create your
+                personalized InsightXine experience.
+            </p>
+
+        </div>
+
+
+        <!-- BUSINESS FORM -->
+        <form
+    id="businessForm"
+    class="business-form"
+    action="dashboard.html"
+    method="GET"
+          >
+
+            <!-- BUSINESS NAME -->
+            <div class="form-group">
+
+                <label for="businessName">
+                    Business name
+                </label>
+
+                <input
+                    type="text"
+                    id="businessName"
+                    name="businessName"
+                    placeholder="e.g. Sheila's Beauty Hub"
+                    required
+                >
+
+            </div>
+
+
+            <!-- BUSINESS TYPE -->
+            <div class="form-group">
+
+                <label for="businessType">
+                    What type of business do you run?
+                </label>
+
+                <select
+                    id="businessType"
+                    name="businessType"
+                    required
+                >
+
+                    <option value="">
+                        Select your business type
+                    </option>
+
+                    <option value="beauty">
+                        Beauty & Salon
+                    </option>
+
+                    <option value="restaurant">
+                        Restaurant & Food
+                    </option>
+
+                    <option value="fashion">
+                        Fashion & Clothing
+                    </option>
+
+                    <option value="retail">
+                        Retail / Store
+                    </option>
+
+                    <option value="professional">
+                        Professional Services
+                    </option>
+
+                    <option value="health">
+                        Health & Wellness
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- LOCATION -->
+            <div class="form-group">
+
+                <label for="businessLocation">
+                    Where is your business located?
+                </label>
+
+                <input
+                    type="text"
+                    id="businessLocation"
+                    name="businessLocation"
+                    placeholder="e.g. Abuja, Nigeria"
+                    required
+                >
+
+            </div>
+
+
+            <!-- EMPLOYEES -->
+            <div class="form-group">
+
+                <label for="employees">
+                    How many people work in your business?
+                </label>
+
+                <select
+                    id="employees"
+                    name="employees"
+                    required
+                >
+
+                    <option value="">
+                        Select an option
+                    </option>
+
+                    <option value="1">
+                        Just me
+                    </option>
+
+                    <option value="2-5">
+                        2–5 people
+                    </option>
+
+                    <option value="6-10">
+                        6–10 people
+                    </option>
+
+                    <option value="11-25">
+                        11–25 people
+                    </option>
+
+                    <option value="26+">
+                        More than 25
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- CUSTOMER COUNT -->
+            <div class="form-group">
+
+                <label for="customers">
+                    About how many customers do you serve each week?
+                </label>
+
+                <input
+                    type="number"
+                    id="customers"
+                    name="customers"
+                    placeholder="e.g. 40"
+                    min="0"
+                    required
+                >
+
+            </div>
+
+
+            <!-- REVENUE -->
+            <div class="form-group">
+
+                <label for="revenue">
+                    What is your approximate monthly revenue?
+                </label>
+
+                <select
+                    id="revenue"
+                    name="revenue"
+                    required
+                >
+
+                    <option value="">
+                        Select a range
+                    </option>
+
+                    <option value="under-100k">
+                        Under ₦100,000
+                    </option>
+
+                    <option value="100k-300k">
+                        ₦100,000 – ₦300,000
+                    </option>
+
+                    <option value="300k-500k">
+                        ₦300,000 – ₦500,000
+                    </option>
+
+                    <option value="500k-1m">
+                        ₦500,000 – ₦1,000,000
+                    </option>
+
+                    <option value="1m+">
+                        More than ₦1,000,000
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+            <button
+                type="submit"
+                class="primary-button setup-button"
+            >
+                Continue
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

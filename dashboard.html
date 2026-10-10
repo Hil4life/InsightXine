@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | InsightXine</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="theme-color" content="#28a879">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            Insight<span>Xine</span>
+        </div>
+
+        <nav class="dashboard-nav">
+
+            <a href="#" class="active">
+                <span>⌂</span>
+                Overview
+            </a>
+
+            <a href="#insights">
+              <span>◈</span>
+              Insights
+             </a>
+
+            <a href="#">
+                <span>↗</span>
+                Customers
+            </a>
+
+            <a href="#">
+                <span>▣</span>
+                Performance
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="#">
+                ⚙ Settings
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="dashboard-main">
+
+        <!-- TOP BAR -->
+        <header class="dashboard-header">
+
+            <div>
+                <p class="dashboard-label">
+                    BUSINESS OVERVIEW
+                </p>
+
+                <h1 id="dashboardBusinessName">
+                    Your Business
+                </h1>
+            </div>
+
+            <div class="profile-circle">
+                <span>ME</span>
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME -->
+        <section class="dashboard-welcome">
+
+            <div>
+
+                <p class="eyebrow">
+                    YOUR BUSINESS SNAPSHOT
+                </p>
+
+                <h2>
+                    Here's what's happening
+                    with your business.
+                </h2>
+
+                <p id="businessLocationDisplay">
+                    Let's turn your business information
+                    into useful insights.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- METRIC CARDS -->
+        <section class="metric-grid">
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+                    <span>Customers / Week</span>
+                    <span class="metric-icon">👥</span>
+                </div>
+
+                <strong id="customerMetric">
+                    --
+                </strong>
+
+                <p>
+                    Estimated weekly customers
+                </p>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+                    <span>Monthly Revenue</span>
+                    <span class="metric-icon">₦</span>
+                </div>
+
+                <strong id="revenueMetric">
+                    --
+                </strong>
+
+                <p>
+                    Approximate revenue range
+                </p>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+                    <span>Business Type</span>
+                    <span class="metric-icon">◆</span>
+                </div>
+
+                <strong id="businessTypeMetric">
+                    --
+                </strong>
+
+                <p>
+                    Your selected category
+                </p>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-top">
+                    <span>Team Size</span>
+                    <span class="metric-icon">◉</span>
+                </div>
+
+                <strong id="employeeMetric">
+                    --
+                </strong>
+
+                <p>
+                    People in your business
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PERFORMANCE SNAPSHOT -->
+        <section class="performance-section">
+
+            <div class="section-title">
+
+                <div>
+
+                    <p class="dashboard-label">
+                        PERFORMANCE SNAPSHOT
+                    </p>
+
+                    <h3>
+                        Your business activity
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="performance-grid">
+
+                <!-- TOTAL SERVICES -->
+                <div class="performance-card">
+
+                    <div class="performance-card-top">
+
+                        <span>
+                            Total Services
+                        </span>
+
+                        <span class="performance-icon">
+                            ◈
+                        </span>
+
+                    </div>
+
+                    <strong id="totalServicesMetric">
+                        0
+                    </strong>
+
+                    <p>
+                        Services or products recorded
+                    </p>
+
+                </div>
+
+
+                <!-- TOTAL BOOKINGS -->
+                <div class="performance-card">
+
+                    <div class="performance-card-top">
+
+                        <span>
+                            Total Bookings
+                        </span>
+
+                        <span class="performance-icon">
+                            ↗
+                        </span>
+
+                    </div>
+
+                    <strong id="totalBookingsMetric">
+                        0
+                    </strong>
+
+                    <p>
+                        Activity recorded this month
+                    </p>
+
+                </div>
+
+
+                <!-- ESTIMATED REVENUE -->
+                <div class="performance-card">
+
+                    <div class="performance-card-top">
+
+                        <span>
+                            Estimated Revenue
+                        </span>
+
+                        <span class="performance-icon">
+                            ₦
+                        </span>
+
+                    </div>
+
+                    <strong id="estimatedRevenueMetric">
+                        ₦0
+                    </strong>
+
+                    <p>
+                        Based on recorded bookings
+                    </p>
+
+                </div>
+
+
+                <!-- TOP SERVICE -->
+                <div class="performance-card">
+
+                    <div class="performance-card-top">
+
+                        <span>
+                            Top Service
+                        </span>
+
+                        <span class="performance-icon">
+                            ★
+                        </span>
+
+                    </div>
+
+                    <strong id="performanceTopService">
+                        --
+                    </strong>
+
+                    <p id="performanceTopServiceDetails">
+                        Add services to see your top performer
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    <!-- TOP PERFORMING SERVICE -->
+    <div class="top-service-card">
+
+        <div>
+            <p class="dashboard-label">
+                TOP PERFORMING SERVICE
+            </p>
+
+            <h3 id="topServiceName">
+                Add your services
+            </h3>
+
+            <p id="topServiceDetails">
+                Add business activity to discover
+                your strongest performer.
+            </p>
+        </div>
+
+        <div class="top-service-badge">
+            ★
+        </div>
+
+    </div>
+
+        <!-- INSIGHTS AREA -->
+        <section class="insights-layout" id="insights">
+
+
+            <!-- MAIN INSIGHT -->
+            <div class="main-insight">
+
+                <div class="section-title">
+
+                    <div>
+
+                        <p class="dashboard-label">
+                            INSIGHTXINE ANALYSIS
+                        </p>
+
+                        <h3>
+                            What InsightXine found
+                        </h3>
+
+                    </div>
+
+                    <span class="insight-status">
+                        ● Ready
+                    </span>
+
+                </div>
+
+<div class="insight-content">
+
+    <div class="big-insight-icon">
+        ✦
+    </div>
+
+    <div>
+
+        <span class="insight-label">
+            BUSINESS INSIGHT
+        </span>
+
+        <h4>
+            Your business is showing a pattern.
+        </h4>
+
+        <p id="mainInsight">
+            Add business activity to generate
+            your first insight.
+        </p>
+
+    </div>
+
+</div>
+
+
+            <!-- ACTION -->
+            <div class="action-card">
+
+                <p class="dashboard-label">
+                    RECOMMENDED ACTION
+                </p>
+
+                <div class="action-icon">
+                    →
+                </div>
+
+                <h3>
+                    Complete your business profile
+                </h3>
+
+                <p>
+                    Add your services and customer information
+                    to unlock more personalized insights.
+                </p>
+
+               <a href="data.html" class="action-button">
+                  Add Business Data
+                 </a>
+
+            </div>
+
+        </section>
+
+   
+<section class="health-score-section">
+    <h2>Business Health Score</h2>
+
+    <div class="health-score-card">
+        <div class="health-score-circle">
+            <span id="healthScore">--</span>
+            <small>/100</small>
+        </div>
+
+        <div class="health-score-details">
+            <h3 id="healthStatus">Calculating...</h3>
+            <p id="healthMessage">
+                Your business health assessment will appear here.
+            </p>
+        </div>
+    </div>
+</section>
+        
+<section class="performance-summary">
+    <h2>Business Performance Summary</h2>
+
+    <div class="performance-status">
+        <p class="summary-label">Booking Performance</p>
+        <h3 id="performanceStatus">Analyzing performance...</h3>
+        <p id="performanceMessage">
+            Your business performance summary will appear here.
+        </p>
+    </div>
+
+    <div class="performance-next-step">
+        <h3>Recommended Next Step</h3>
+        <p id="performanceNextStep">
+            Your next action will appear here.
+        </p>
+    </div>
+</section>
+
+
+<!-- Step 16: Booking Analytics Chart -->
+<section class="booking-analytics-section">
+    <h2>Booking Analytics</h2>
+    <p class="analytics-description">
+        Compare the number of bookings across your services.
+    </p>
+
+    <div class="booking-chart-card">
+        <div class="chart-heading">
+            <h3>Bookings by Service</h3>
+            <span id="chartTotalBookings">0 bookings</span>
+        </div>
+
+        <div id="bookingChart" class="booking-chart">
+            <p class="chart-empty-message">
+                Your service booking chart will appear here.
+            </p>
+        </div>
+    </div>
+</section>
+
+        <!-- BUSINESS PROFILE -->
+        <section class="profile-section">
+
+            <div class="section-title">
+
+                <div>
+
+                    <p class="dashboard-label">
+                        BUSINESS PROFILE
+                    </p>
+
+                    <h3>
+                        Your information
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-grid">
+
+                <div>
+                    <span>Business Name</span>
+                    <strong id="profileBusinessName">--</strong>
+                </div>
+
+                <div>
+                    <span>Business Type</span>
+                    <strong id="profileBusinessType">--</strong>
+                </div>
+
+                <div>
+                    <span>Location</span>
+                    <strong id="profileLocation">--</strong>
+                </div>
+
+                <div>
+                    <span>Team Size</span>
+                    <strong id="profileEmployees">--</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="dashboard-footer">
+
+            <p>
+                InsightXine
+            </p>
+
+            <span>
+                Smarter insights for growing local businesses.
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
