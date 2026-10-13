@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | InsightXine</title>
+    <meta name="theme-color" content="#134661">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <a href="index.html" class="auth-brand">
+                Insight<span>Xine</span><span class="brand-dot">.</span>
+            </a>
+
+            <div class="auth-heading">
+                <span class="auth-eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+
+                <h1>Create your account.</h1>
+
+                <p>
+                    Bring your business information together
+                    and start discovering opportunities for growth.
+                </p>
+            </div>
+
+            <form id="signup-form" class="auth-form">
+
+                <div class="auth-field">
+                    <label for="fullName">Full name</label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="auth-field">
+                    <label for="email">Email address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="auth-field">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+                </div>
+
+                <div class="auth-field">
+                    <label for="confirmPassword">Confirm password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Enter your password again"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    Create Account
+                    <span aria-hidden="true">→</span>
+                </button>
+
+                <p
+                    id="auth-message"
+                    class="auth-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+            <div class="auth-divider">
+                <span></span>
+                <span>ALREADY WITH INSIGHTXINE?</span>
+                <span></span>
+            </div>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="login.html">Sign in</a>
+            </p>
+
+            <a href="index.html" class="auth-back">
+                <span aria-hidden="true">←</span> Back to home
+            </a>
+
+            <footer class="auth-footer">
+                Smarter insights for growing local businesses.
+            </footer>
+
+        </section>
+
+        <aside class="auth-visual">
+
+            <div class="auth-visual-content">
+
+                <span class="visual-tag">
+                    <span class="visual-dot"></span>
+                    YOUR BUSINESS JOURNEY STARTS HERE
+                </span>
+
+                <h2>
+                    Know your business.
+                    <span>Unlock your potential.</span>
+                </h2>
+
+                <p>
+                    InsightXine helps local business owners
+                    make sense of their activity, understand
+                    their performance, and decide what to do next.
+                </p>
+
+                <div class="visual-insight-card">
+
+                    <div class="visual-card-top">
+                        <span class="visual-card-icon">✦</span>
+                        <span>A SMARTER WAY TO GROW</span>
+                    </div>
+
+                    <h3>Your business has potential.</h3>
+
+                    <p>
+                        Start recording your services and bookings
+                        to discover useful business insights.
+                    </p>
+
+                    <div class="visual-card-line">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="auth-visual-footer">
+                <span>INSIGHTXINE</span>
+                <span>Clarity for your next move.</span>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
