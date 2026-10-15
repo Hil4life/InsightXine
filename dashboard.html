@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +12,6 @@
     <link rel="manifest" href="manifest.json">
 
     <meta name="theme-color" content="#28a879">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="dashboard-page">
@@ -32,19 +31,19 @@
             </a>
 
             <a href="#insights">
-              <span>◈</span>
-              Insights
-             </a>
+                <span>◈</span>
+                Insights
+            </a>
 
             <a href="#">
                 <span>↗</span>
                 Customers
             </a>
 
-            <a href="#">
-                <span>▣</span>
+           <a href="#performance">
+               <span>▣</span>
                 Performance
-            </a>
+             </a>
 
         </nav>
 
@@ -75,8 +74,20 @@
                 </h1>
             </div>
 
-            <div class="profile-circle">
-                <span>ME</span>
+            <!-- HEADER ACTIONS -->
+            <div class="dashboard-header-actions">
+
+                <button
+                    type="button"
+                    id="logout-button"
+                    class="logout-button">
+                    Log Out
+                </button>
+
+                <div class="profile-circle">
+                    <span>ME</span>
+                </div>
+
             </div>
 
         </header>
@@ -116,13 +127,9 @@
                     <span class="metric-icon">👥</span>
                 </div>
 
-                <strong id="customerMetric">
-                    --
-                </strong>
+                <strong id="customerMetric">--</strong>
 
-                <p>
-                    Estimated weekly customers
-                </p>
+                <p>Estimated weekly customers</p>
 
             </div>
 
@@ -134,13 +141,9 @@
                     <span class="metric-icon">₦</span>
                 </div>
 
-                <strong id="revenueMetric">
-                    --
-                </strong>
+                <strong id="revenueMetric">--</strong>
 
-                <p>
-                    Approximate revenue range
-                </p>
+                <p>Approximate revenue range</p>
 
             </div>
 
@@ -152,13 +155,9 @@
                     <span class="metric-icon">◆</span>
                 </div>
 
-                <strong id="businessTypeMetric">
-                    --
-                </strong>
+                <strong id="businessTypeMetric">--</strong>
 
-                <p>
-                    Your selected category
-                </p>
+                <p>Your selected category</p>
 
             </div>
 
@@ -170,13 +169,9 @@
                     <span class="metric-icon">◉</span>
                 </div>
 
-                <strong id="employeeMetric">
-                    --
-                </strong>
+                <strong id="employeeMetric">--</strong>
 
-                <p>
-                    People in your business
-                </p>
+                <p>People in your business</p>
 
             </div>
 
@@ -184,20 +179,16 @@
 
 
         <!-- PERFORMANCE SNAPSHOT -->
-        <section class="performance-section">
+        <section class="performance-section" id="performance">
 
             <div class="section-title">
 
                 <div>
-
                     <p class="dashboard-label">
                         PERFORMANCE SNAPSHOT
                     </p>
 
-                    <h3>
-                        Your business activity
-                    </h3>
-
+                    <h3>Your business activity</h3>
                 </div>
 
             </div>
@@ -209,24 +200,14 @@
                 <div class="performance-card">
 
                     <div class="performance-card-top">
+                        <span>Total Services</span>
 
-                        <span>
-                            Total Services
-                        </span>
-
-                        <span class="performance-icon">
-                            ◈
-                        </span>
-
+                        <span class="performance-icon">◈</span>
                     </div>
 
-                    <strong id="totalServicesMetric">
-                        0
-                    </strong>
+                    <strong id="totalServicesMetric">0</strong>
 
-                    <p>
-                        Services or products recorded
-                    </p>
+                    <p>Services or products recorded</p>
 
                 </div>
 
@@ -235,24 +216,14 @@
                 <div class="performance-card">
 
                     <div class="performance-card-top">
+                        <span>Total Bookings</span>
 
-                        <span>
-                            Total Bookings
-                        </span>
-
-                        <span class="performance-icon">
-                            ↗
-                        </span>
-
+                        <span class="performance-icon">↗</span>
                     </div>
 
-                    <strong id="totalBookingsMetric">
-                        0
-                    </strong>
+                    <strong id="totalBookingsMetric">0</strong>
 
-                    <p>
-                        Activity recorded this month
-                    </p>
+                    <p>Activity recorded this month</p>
 
                 </div>
 
@@ -261,24 +232,14 @@
                 <div class="performance-card">
 
                     <div class="performance-card-top">
+                        <span>Estimated Revenue</span>
 
-                        <span>
-                            Estimated Revenue
-                        </span>
-
-                        <span class="performance-icon">
-                            ₦
-                        </span>
-
+                        <span class="performance-icon">₦</span>
                     </div>
 
-                    <strong id="estimatedRevenueMetric">
-                        ₦0
-                    </strong>
+                    <strong id="estimatedRevenueMetric">₦0</strong>
 
-                    <p>
-                        Based on recorded bookings
-                    </p>
+                    <p>Based on recorded bookings</p>
 
                 </div>
 
@@ -287,20 +248,12 @@
                 <div class="performance-card">
 
                     <div class="performance-card-top">
+                        <span>Top Service</span>
 
-                        <span>
-                            Top Service
-                        </span>
-
-                        <span class="performance-icon">
-                            ★
-                        </span>
-
+                        <span class="performance-icon">★</span>
                     </div>
 
-                    <strong id="performanceTopService">
-                        --
-                    </strong>
+                    <strong id="performanceTopService">--</strong>
 
                     <p id="performanceTopServiceDetails">
                         Add services to see your top performer
@@ -313,33 +266,29 @@
         </section>
 
 
-    <!-- TOP PERFORMING SERVICE -->
-    <div class="top-service-card">
+        <!-- TOP PERFORMING SERVICE -->
+        <div class="top-service-card">
 
-        <div>
-            <p class="dashboard-label">
-                TOP PERFORMING SERVICE
-            </p>
+            <div>
+                <p class="dashboard-label">
+                    TOP PERFORMING SERVICE
+                </p>
 
-            <h3 id="topServiceName">
-                Add your services
-            </h3>
+                <h3 id="topServiceName">Add your services</h3>
 
-            <p id="topServiceDetails">
-                Add business activity to discover
-                your strongest performer.
-            </p>
+                <p id="topServiceDetails">
+                    Add business activity to discover
+                    your strongest performer.
+                </p>
+            </div>
+
+            <div class="top-service-badge">★</div>
+
         </div>
 
-        <div class="top-service-badge">
-            ★
-        </div>
-
-    </div>
 
         <!-- INSIGHTS AREA -->
         <section class="insights-layout" id="insights">
-
 
             <!-- MAIN INSIGHT -->
             <div class="main-insight">
@@ -347,136 +296,150 @@
                 <div class="section-title">
 
                     <div>
-
                         <p class="dashboard-label">
                             INSIGHTXINE ANALYSIS
                         </p>
 
-                        <h3>
-                            What InsightXine found
-                        </h3>
-
+                        <h3>What InsightXine found</h3>
                     </div>
 
-                    <span class="insight-status">
-                        ● Ready
-                    </span>
+                    <span class="insight-status">● Ready</span>
 
                 </div>
 
-<div class="insight-content">
+                <div class="insight-content">
 
-    <div class="big-insight-icon">
-        ✦
-    </div>
+                    <div class="big-insight-icon">✦</div>
 
-    <div>
+                    <div>
+                        <span class="insight-label">
+                            BUSINESS INSIGHT
+                        </span>
 
-        <span class="insight-label">
-            BUSINESS INSIGHT
-        </span>
+                        <h4>Your business is showing a pattern.</h4>
 
-        <h4>
-            Your business is showing a pattern.
-        </h4>
+                        <p id="mainInsight">
+                            Add business activity to generate
+                            your first insight.
+                        </p>
+                    </div>
 
-        <p id="mainInsight">
-            Add business activity to generate
-            your first insight.
-        </p>
+                </div>
 
-    </div>
-
-</div>
+            </div>
 
 
-            <!-- ACTION -->
+            <!-- RECOMMENDED ACTION -->
             <div class="action-card">
 
                 <p class="dashboard-label">
                     RECOMMENDED ACTION
                 </p>
 
-                <div class="action-icon">
-                    →
-                </div>
+                <div class="action-icon">→</div>
 
-                <h3>
-                    Complete your business profile
-                </h3>
+                <h3>Complete your business profile</h3>
 
                 <p>
                     Add your services and customer information
                     to unlock more personalized insights.
                 </p>
 
-               <a href="data.html" class="action-button">
-                  Add Business Data
-                 </a>
+                <a href="data.html" class="action-button">
+                    Add Business Data
+                </a>
 
             </div>
 
         </section>
 
-   
-<section class="health-score-section">
-    <h2>Business Health Score</h2>
 
-    <div class="health-score-card">
-        <div class="health-score-circle">
-            <span id="healthScore">--</span>
-            <small>/100</small>
-        </div>
+        <!-- BUSINESS HEALTH SCORE -->
+        <section class="health-score-section">
 
-        <div class="health-score-details">
-            <h3 id="healthStatus">Calculating...</h3>
-            <p id="healthMessage">
-                Your business health assessment will appear here.
+            <h2>Business Health Score</h2>
+
+            <div class="health-score-card">
+
+                <div class="health-score-circle">
+                    <span id="healthScore">--</span>
+                    <small>/100</small>
+                </div>
+
+                <div class="health-score-details">
+                    <h3 id="healthStatus">Calculating...</h3>
+
+                    <p id="healthMessage">
+                        Your business health assessment will appear here.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BUSINESS PERFORMANCE SUMMARY -->
+        <section class="performance-summary">
+
+            <h2>Business Performance Summary</h2>
+
+            <div class="performance-status">
+
+                <p class="summary-label">Booking Performance</p>
+
+                <h3 id="performanceStatus">
+                    Analyzing performance...
+                </h3>
+
+                <p id="performanceMessage">
+                    Your business performance summary will appear here.
+                </p>
+
+            </div>
+
+            <div class="performance-next-step">
+
+                <h3>Recommended Next Step</h3>
+
+                <p id="performanceNextStep">
+                    Your next action will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOOKING ANALYTICS -->
+        <section class="booking-analytics-section">
+
+            <h2>Booking Analytics</h2>
+
+            <p class="analytics-description">
+                Compare the number of bookings across your services.
             </p>
-        </div>
-    </div>
-</section>
-        
-<section class="performance-summary">
-    <h2>Business Performance Summary</h2>
 
-    <div class="performance-status">
-        <p class="summary-label">Booking Performance</p>
-        <h3 id="performanceStatus">Analyzing performance...</h3>
-        <p id="performanceMessage">
-            Your business performance summary will appear here.
-        </p>
-    </div>
+            <div class="booking-chart-card">
 
-    <div class="performance-next-step">
-        <h3>Recommended Next Step</h3>
-        <p id="performanceNextStep">
-            Your next action will appear here.
-        </p>
-    </div>
-</section>
+                <div class="chart-heading">
+                    <h3>Bookings by Service</h3>
 
+                    <span id="chartTotalBookings">0 bookings</span>
+                </div>
 
-<!-- Step 16: Booking Analytics Chart -->
-<section class="booking-analytics-section">
-    <h2>Booking Analytics</h2>
-    <p class="analytics-description">
-        Compare the number of bookings across your services.
-    </p>
+                <div id="bookingChart" class="booking-chart">
 
-    <div class="booking-chart-card">
-        <div class="chart-heading">
-            <h3>Bookings by Service</h3>
-            <span id="chartTotalBookings">0 bookings</span>
-        </div>
+                    <p class="chart-empty-message">
+                        Your service booking chart will appear here.
+                    </p>
 
-        <div id="bookingChart" class="booking-chart">
-            <p class="chart-empty-message">
-                Your service booking chart will appear here.
-            </p>
-        </div>
-    </div>
-</section>
+                </div>
+
+            </div>
+
+        </section>
+
 
         <!-- BUSINESS PROFILE -->
         <section class="profile-section">
@@ -484,19 +447,14 @@
             <div class="section-title">
 
                 <div>
-
                     <p class="dashboard-label">
                         BUSINESS PROFILE
                     </p>
 
-                    <h3>
-                        Your information
-                    </h3>
-
+                    <h3>Your information</h3>
                 </div>
 
             </div>
-
 
             <div class="profile-grid">
 
@@ -528,9 +486,7 @@
         <!-- FOOTER -->
         <footer class="dashboard-footer">
 
-            <p>
-                InsightXine
-            </p>
+            <p>InsightXine</p>
 
             <span>
                 Smarter insights for growing local businesses.
@@ -541,8 +497,82 @@
     </main>
 
 
+    <!-- SUPABASE LIBRARY -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- SUPABASE CONFIGURATION -->
+    <script src="js/supabase.js"></script>
+
+
+    <!-- DASHBOARD SESSION CHECK -->
+    <script>
+        console.log("InsightXine: checking login session...");
+
+        (async function () {
+            try {
+                const { data, error } =
+                    await supabaseClient.auth.getSession();
+
+                console.log("InsightXine session check:", {
+                    hasSession: !!data.session,
+                    error: error ? error.message : null
+                });
+
+                if (error || !data.session) {
+                    window.location.replace("login.html");
+                }
+
+            } catch (err) {
+                console.error(
+                    "InsightXine session check failed:",
+                    err
+                );
+
+                window.location.replace("login.html");
+            }
+        })();
+    </script>
+
+
+    <!-- EXISTING DASHBOARD FUNCTIONALITY -->
     <script src="js/script.js"></script>
 
-</body>
 
+    <!-- LOGOUT FUNCTIONALITY -->
+    <script>
+        const logoutButton = document.getElementById("logout-button");
+
+        if (logoutButton) {
+            logoutButton.addEventListener("click", async function () {
+                logoutButton.disabled = true;
+                logoutButton.textContent = "Logging out...";
+
+                try {
+                    const { error } = await supabaseClient.auth.signOut();
+
+                    if (error) {
+                        console.error("Logout failed:", error);
+
+                        logoutButton.disabled = false;
+                        logoutButton.textContent = "Log Out";
+
+                        alert("We couldn't log you out. Please try again.");
+                        return;
+                    }
+
+                    window.location.replace("login.html");
+
+                } catch (err) {
+                    console.error("Logout error:", err);
+
+                    logoutButton.disabled = false;
+                    logoutButton.textContent = "Log Out";
+
+                    alert("Something went wrong while logging out.");
+                }
+            });
+        }
+    </script>
+
+</body>
 </html>
